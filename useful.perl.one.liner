@@ -1,0 +1,2 @@
+# converting to int
+cat float.csv | perl -lane 'print int($_); ' > int.txt
