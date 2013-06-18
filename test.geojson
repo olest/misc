@@ -1,0 +1,13 @@
+{
+    "type": "Feature",
+    "id": "Cambridge.Parkers.Piece",
+    "properties": {},
+    "geometry": {
+    "type": "Point",
+    "coordinates": [
+        52.20933, 
+        0.15465
+    ]
+    }
+}
+
