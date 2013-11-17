@@ -24,8 +24,6 @@ def getOptions() :
 	parser.add_option('--recipientEmail', dest='recipientEmail',help='Recipient')
 	parser.add_option('--smtpPassword', dest='smtpPass',help='SMTP password')
 	(options, args) = parser.parse_args()
-
-	print "len = ",len(args)
  
  	# check for any errors or missing requirements from argument parsing:
  	if len(args) :
