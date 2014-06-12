@@ -17,8 +17,8 @@ def getOptions() :
 
 	from optparse import OptionParser
 
-	#parser = OptionParser(usage="usage: %prog --senderEmail <string> --recipientEmail <string>  ", description="Apply filtering to grouper's somatic vcf output")
-	parser = OptionParser()
+	parser = OptionParser(usage="usage: %prog --senderEmail <string> --recipientEmail <string>  ", description="Retrieve train times")
+	#parser = OptionParser()
 
 	parser.add_option('--senderEmail', dest='senderEmail',help='Sender')
 	parser.add_option('--recipientEmail', dest='recipientEmail',help='Recipient')
@@ -26,7 +26,7 @@ def getOptions() :
 	(options, args) = parser.parse_args()
  
  	# check for any errors or missing requirements from argument parsing:
- 	if len(args) :
+ 	if not len(args) :
 		parser.print_help()
  		sys.exit(2)
 
